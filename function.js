@@ -39,23 +39,25 @@
 // sum(5,6);
 
 
-const display=()=>{
-    var a=10
-    var b=20
-    var c=30
-    console.log(a);
-    setTimeout(( )=>{console.log(b)},2000);
-    console.log(c);
-}
-display();
-
-// IIEF
-//  (function sum(a,b){
-//     var c=a+b
+// const display=()=>{
+//     var a=10
+//     var b=20
+//     var c=30
+//     console.log(a);
+//     setTimeout(( )=>{console.log(b)},2000);
 //     console.log(c);
 // }
-// )
-// (5,2)
+// display();
+
+
+// IIEF
+
+ (function sum(a,b){
+    var c=a+b
+    console.log(c);
+}
+)
+(5,2)
 
 
 
