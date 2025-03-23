@@ -52,12 +52,12 @@
 
 // IIEF
 
- (function sum(a,b){
-    var c=a+b
-    console.log(c);
-}
-)
-(5,2)
+//  (function sum(a,b){
+//     var c=a+b
+//     console.log(c);
+// }
+// )
+// (5,2)
 
 
 
