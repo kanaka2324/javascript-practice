@@ -13,3 +13,23 @@ const person={
     console.log(person.FirstName);
     console.log(person.age)
     console.log(person.fullName());
+
+
+    
+
+    // creating an object
+    const car={
+        brand:"Royal Enfield",
+        model:"350cc",
+        year:2023,
+
+        //method to display car details
+        getDetails:function(){
+            return this.brand +" "+ this.year;
+            
+        }
+    };
+    //accesing object properties
+    console.log(car.brand);
+    console.log(car.model);
+    console.log(car.getDetails());
