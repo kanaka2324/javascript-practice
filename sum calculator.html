@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        input {
+            padding: 10px;
+            font-size: 16px;
+            width: 150px;
+            margin: 10px;
+            text-align: center;
+        }
+        .result {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Real-time Sum Calculator</h2>
+    <input type="number" id="num1" placeholder="Enter first number">
+    <input type="number" id="num2" placeholder="Enter second number">
+    <div class="result">Sum: <span id="sumResult">0</span></div>
+
+    <script>
+        function calculateSum() {
+            // Get values from input fields
+            let num1 = document.getElementById("num1").value;
+            let num2 = document.getElementById("num2").value;
+
+            // Convert to numbers and sum
+            let sum = (Number(num1) || 0) + (Number(num2) || 0);
+
+            // Display the result
+            document.getElementById("sumResult").textContent = sum;
+        }
+
+        // Attach event listeners to both inputs
+        document.getElementById("num1").addEventListener("input", (event) => {
+            console.log("First input changed:", event.target.value);
+            calculateSum();
+        });
+
+        document.getElementById("num2").addEventListener("input", (event) => {
+            console.log("Second input changed:", event.target.value);
+            calculateSum();
+        });
+    </script>
+
+</body>
+</html>
