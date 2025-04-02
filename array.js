@@ -97,11 +97,11 @@
 // console.log(arr);
 
 // let arr=[1,2,3,4,5];
-// arr.push(6);  //push the element last index
+// console.log(arr.push(6));  //push the element last index
 // console.log(arr);
 
 // let arr=[1,2,3,4,5];
-// arr.shift(1); //delete first element
+// console.log(arr.shift(1)) //delete first element
 // console.log(arr);
 
 // let arr=[1,2,3,4,5];
@@ -109,8 +109,12 @@
 // console.log(arr);
 
 // let arr=[1,2,3,4,5];
-// let slicearr=arr.slice(1,3);//.slice(first index,last index)//first index not count
-// console.log(slicearr);
+// console.log(arr.slice(1,3));//.slice(first index,last index)//first index not count
+// console.log(arr);
+
+// let fruits=["apple","banana","pomogranate","custard","cherry"]
+// console.log(fruits.slice(2,4));
+// console.log(fruits);
 
 
 // let colors=["red","green","blue","yellow"];
@@ -118,15 +122,13 @@
 // console.log(colors);
 // console.log(removed);
 
+// let colors=["red","blue","green","black"];
+// console.log(colors.splice(1,2));
+// console.log(colors);
 
 
 // let arr=[[1,2],[3,4],[5,6]];
 // console.log(arr.flat());
-
-// let arr=[1,2,3,4,5,6];
-// console.log(arr.shift());
-// console.log(arr);
-
 
 
 // for each
@@ -146,10 +148,11 @@
 
 
 //FOR LOOP
-let arr=[1,2,3,4,5];
-for(let i=0;i<arr.length;i++){   //single line
-    console.log(i);
-}
+// let arr=[1,2,3,4,5];
+// for(let i=0;i<arr.length;i++){   //single line
+//     console.log(i);
+// }
+
 
 //// WHILE LOOP
 // let arr=[1,2,3,4,5];
@@ -158,3 +161,22 @@ for(let i=0;i<arr.length;i++){   //single line
 //     console.log(i);
 //     i++;               // update
 // }
+
+
+ ////MAP METHOD
+// let arr=[7,9,2,6];
+// arr.map((i)=>{   //we use call back function
+//     console.log(i);
+// });
+
+
+// let arr=[7,9,2,6];
+// arr.map((i)=>{
+//     console.log(i*2);
+// });
+
+
+// let arr=["ram","sham","sonu"];
+// arr.map((i)=>{
+//     console.log("mr."+i);//also use , or +
+// });
