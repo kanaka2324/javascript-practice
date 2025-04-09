@@ -20,11 +20,17 @@
 // }
 
 
-
-// let arr=[1,2,3,4,5]
-// arr.map((num,index)=>{
-//     console.log(num,index);
+// let arr=[10,20,30,40,50];
+// arr.forEach((num,index)=>{
+//     console.log(`index : ${index} : ${num}`); 
 // });
+
+
+
+let arr=[1,2,3,4,5]
+arr.map((num,index)=>{
+    console.log(num,index);
+});
 
 
 
